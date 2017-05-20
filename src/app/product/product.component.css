@@ -1,0 +1,17 @@
+li{
+    background-color: lightgray;
+    height: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+span{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-color: red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}

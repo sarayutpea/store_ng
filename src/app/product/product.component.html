@@ -1,0 +1,9 @@
+<h1>Add item</h1>
+<input type="text" name="item" placeholder="add Item Here" value="">
+<button type="button">Add</button>
+<ul>
+  <li *ngFor = "let item of items">
+    {{ item }}
+    <span>X</span>
+  </li>
+</ul>

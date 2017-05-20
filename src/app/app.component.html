@@ -1,7 +1,28 @@
 <h1>
   {{title}}
 </h1>
-<a routerLink="/members">Member</a>
-<a routerLink="/products">Products</a>
+<a routerLink="/member">Member</a>
+<a routerLink="/product">Products</a>
 <br>
+<h4>ID: {{ object.id }}</h4>
+<h4>Name: {{ object.name }}</h4>
+
+<h3>Array</h3>
+<h4>{{ arr[0] }}</h4>
+<h4>{{ arr[1] }}</h4>
+
+<ul>
+  <li *ngFor = "let i of arr">
+    {{ i }}
+  </li>
+</ul>
+
+<p *ngIf = "myname == 'sarayut jansoda'">Yeah it's Name</p>
+
+<p *ngIf = "isTrue; then firstTemp else secondTemp" >Hello Check isTrue</p>
+
+<ng-template #firstTemp>This is First Template</ng-template>
+<ng-template #secondTemp>This is second Template</ng-template>
+
+
 <router-outlet></router-outlet>

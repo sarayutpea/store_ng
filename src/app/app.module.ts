@@ -5,24 +5,22 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { MyComponentComponent } from './my-component/my-component.component';
-import { ProductsComponent } from './products/products.component';
-import { MembersComponent } from './members/members.component';
+import { ProductComponent } from './product/product.component';
+import { MemberComponent } from './member/member.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent,
-    ProductsComponent,
-    MembersComponent
+    ProductComponent,
+    MemberComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      {path:'products',component: ProductsComponent},
-      {path:'members', component: MembersComponent}
+      { path: 'member', component: MemberComponent },
+      { path: 'product', component: ProductComponent }
     ])
   ],
   providers: [],
